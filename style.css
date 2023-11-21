@@ -64,7 +64,7 @@ transform: rotate(360deg);
 background: radial-gradient(#fff 3px, #000 3px);
 animation-play-state: paused;
 }
-.levels > h4{
+.levels .levelheightfix > h4{
     font-size: 2rem;
     margin: 15px auto 10px;
 }
