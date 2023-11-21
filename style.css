@@ -1,0 +1,222 @@
+*{
+box-sizing: border-box;
+transition: all 0.5s;
+font-family: 'Nova Square', sans-serif;
+}
+body{
+    background: #040720 ;
+}
+.r45{
+ transform: rotate(45deg);
+}
+.game{
+text-align: center;
+color: #fff;
+position: relative;
+width: fit-content;
+margin: auto;
+display: block;
+padding: 20px;
+}
+.game h1{  
+    font-size: 4rem;
+    background: linear-gradient(to top,#DA22FF,#5FC3E4);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0px;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.form label{
+    margin: 15px auto;
+  cursor: pointer;
+    padding: 8px 20px ;
+    position: relative;
+    border-radius: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   line-height: 24px;
+}
+.form label input[type="radio"]{
+appearance: none;
+height: 20px;
+width: 20px;
+border: 4px solid #DD5E89;
+border-color:#DA22FF #5FC3E4 #DA22FF #5FC3E4 ;
+border-radius: 50%;
+margin-right: 5px;
+animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+ 
+    100%{
+transform: rotate(360deg);
+    }
+}
+
+.form label input:checked{
+background: radial-gradient(#fff 3px, #000 3px);
+animation-play-state: paused;
+}
+.levels > h4{
+    font-size: 2rem;
+    margin: 15px auto 10px;
+}
+.dashboard{
+display: flex;
+flex-wrap: wrap;
+padding: 15px 5px;
+align-items: center;
+justify-content: center;
+gap: 5px;
+}
+
+
+.gameboard .title{
+    font-size: 2rem;
+    margin: 20px auto 10px;
+}
+.points h4{
+color: #DA22FF;
+font-size: 1.2rem;
+margin: 20px auto;
+}
+
+.points + .points h4{
+    color: #5FC3E4;
+    margin-top: 0px;
+}
+
+ button{
+padding: 10px 20px;
+font-size: 1.2rem;
+cursor: pointer;
+color: #5FC3E4;
+background: transparent;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px;
+animation: glow 5s infinite linear;
+}
+@keyframes glow {
+    0%{
+        box-shadow: 1px 1px 6px #DA22FF;
+    }
+    50%{
+        box-shadow: 1px 1px 6px 2px #DA22FF;
+    }
+    100%{
+        box-shadow: 1px 1px 6px #DA22FF;
+    }
+}
+button img{
+height: 20px;
+aspect-ratio: 1;
+margin-left: 10px;
+}
+.sum{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.sum{
+    margin-bottom: 15px;
+}
+.sum div{
+font-size: 2.5rem;
+}
+.result .SubmitValue{
+appearance: none;
+height: 50px;
+width: 200px;
+font-size: 2rem;
+background: transparent;
+color: #5FC3E4;
+outline: none;
+border:2px solid #DA22FF;
+}
+.btnsubmit{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+.btnsubmit button{
+    margin: 15px auto;
+}
+
+.wrongresult{
+    position: fixed; 
+    height: 100dvh;
+    width: 100%;
+    background: #0008;
+    z-index: 5;
+    left: 0;
+    top: 0;
+}
+.popup{
+    background: #fff;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 30px;
+    padding: 25px;
+    color: #000;
+}
+.popup img{
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+.popup h2{
+    font-size: 1.5rem;
+    margin: 15px auto;
+    color: #5d43f7;
+}
+.popup .correctAns{
+font-size: 2.5rem;
+margin-bottom: 15px;
+color: #000;
+}
+.close{
+    background: #5d43f7;
+    border-radius: 30px;
+    box-shadow: none !important;
+    border-color:transparent ;
+    color: #fff;
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+}
+.hide{
+   height: 0 !important;
+    overflow: hidden;
+}
+.gameboard,.levels{
+    overflow: hidden;
+}
+
+
+@media (max-width: 450px) {
+    .game h1{
+        font-size: 3rem;
+    }
+    .popup img{
+        max-width: 90px;
+    }
+    .dashboard button{
+        width: 80%;
+    }
+}

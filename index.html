@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game">
+        <h1>Math Time</h1>
+
+        <div class="levels" >
+
+            <div class="levelheightfix">
+
+            <h4>Levels</h4>
+
+             <div class="form">
+               <label><input type="radio" name="level" value="easy" checked>Easy</label>
+               <label><input type="radio" name="level" value="mid">Middle</label>
+               <label><input type="radio" name="level" value="hard">Hard</label>
+             </div>
+
+            <div class="dashboard">
+                <button class="add">Addition <img src="img/add.png" alt=""></button>
+                <button class="sub">Subtraction <img src="img/minus.png" alt=""> </button>
+                <button class="mul">Multiplication <img src="img/add.png" class="r45" alt=""> </button>
+                <button class="div">Division <img src="img/division.png" alt=""> </button>
+                <button class="square">Square root <img src="img/square-root.png" alt=""> </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="gameboard hide">
+
+            <div class="gameheightfix">
+
+            <div class="title">Addition</div>
+            
+            <div class="points">
+                <h4>High Score <span class="high">0</span></h4>
+            </div>
+            <div class="points">
+                <h4>Your Score <span class="your">0</span></h4>
+            </div>
+
+            <div class="sum">
+                <div class="v1">5</div>
+                <div class="sign">+</div>
+                <div class="v2">2</div>
+            </div>
+
+            <div class="result">
+                <input type="number" class="SubmitValue">
+            </div>
+
+            <div class="btnsubmit">
+                <div class="submit">
+                    <button class="submit">Submit</button>
+                </div>
+    
+                <div class="new">
+                    <button class="mainmenu">Main Menu</button>
+                </div>
+            </div>
+
+        </div>
+           
+        </div>
+
+        <div class="wrongresult hide">
+          <div class="popup">
+            <img src="img/cross.png" alt="">
+
+            <h2>Answer is</h2>
+            <div class="correctAns">
+                74753457
+            </div>
+            <button class="close">Close</button>
+          </div>          
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
