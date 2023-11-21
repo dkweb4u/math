@@ -31,7 +31,7 @@ padding: 20px;
     justify-content: space-evenly;
 }
 .form label{
-    margin: 10px auto;
+    margin: 15px auto;
   cursor: pointer;
     padding: 8px 20px ;
     position: relative;
@@ -218,5 +218,8 @@ color: #000;
     }
     .dashboard button{
         width: 80%;
+    }
+    .form label{
+        margin: 10px auto;
     }
 }
