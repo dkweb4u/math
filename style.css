@@ -143,6 +143,7 @@ background: transparent;
 color: #5FC3E4;
 outline: none;
 border:2px solid #DA22FF;
+text-align: center;
 }
 .btnsubmit{
     display: flex;
